@@ -3,7 +3,7 @@
     <g-image
       alt="Author image"
       class="image"
-      src="~/assets/images/author.jpg"
+      src="~/assets/images/ytype.png"
     />
 
     <h1 v-if="showTitle">

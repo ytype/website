@@ -1,8 +1,9 @@
-const c1 = () => import(/* webpackChunkName: "page--src--templates--tag-vue" */ "/home/shin/Workspace/GitHub/my-gridsome-site/src/templates/Tag.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--pages--second-vue" */ "/home/shin/Workspace/GitHub/my-gridsome-site/src/pages/second.vue")
-const c3 = () => import(/* webpackChunkName: "page--src--pages--about-vue" */ "/home/shin/Workspace/GitHub/my-gridsome-site/src/pages/About.vue")
-const c4 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/home/shin/Workspace/GitHub/my-gridsome-site/node_modules/gridsome/app/pages/404.vue")
-const c5 = () => import(/* webpackChunkName: "page--src--templates--post-vue" */ "/home/shin/Workspace/GitHub/my-gridsome-site/src/templates/Post.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--tag-vue" */ "/home/shin/Workspace/GitHub/website/src/templates/Tag.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--pages--second-vue" */ "/home/shin/Workspace/GitHub/website/src/pages/second.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--about-vue" */ "/home/shin/Workspace/GitHub/website/src/pages/About.vue")
+const c4 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/home/shin/Workspace/GitHub/website/node_modules/gridsome/app/pages/404.vue")
+const c5 = () => import(/* webpackChunkName: "page--src--templates--post-vue" */ "/home/shin/Workspace/GitHub/website/src/templates/Post.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/home/shin/Workspace/GitHub/website/src/pages/index.vue")
 
 export default [
   {
@@ -25,6 +26,11 @@ export default [
   {
     path: "/:title/",
     component: c5
+  },
+  {
+    name: "home",
+    path: "/",
+    component: c6
   },
   {
     name: "*",

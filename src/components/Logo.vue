@@ -14,3 +14,13 @@ query {
   }
 }
 </static-query>
+
+<style lang="scss" scoped>
+a {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  &:hover{
+    color: #5184EC;
+  }
+}
+</style>

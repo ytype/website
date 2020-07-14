@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Bulma Starter',
+  siteName: 'ytype',
   siteDescription: 'A baseline Gridsome starter to get you going with Bulma.',
 
   templates: {

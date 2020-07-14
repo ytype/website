@@ -1,7 +1,7 @@
 export default {
   "trailingSlash": true,
   "pathPrefix": "",
-  "titleTemplate": "%s - Gridsome Bulma Starter",
+  "titleTemplate": "%s - ytype",
   "siteUrl": "",
   "version": "0.7.19",
   "catchLinks": true

@@ -58,11 +58,11 @@ export default {
 </script>
 
 <page-query>
-query Post ($id: ID!) {
-  post: post (id: $id) {
+query Post($id: ID!) {
+  post: post(id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date(format: "D. MMMM YYYY")
     timeToRead
     tags {
       id
@@ -71,7 +71,7 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
+    cover_image(width: 860, blur: 10)
   }
 }
 </page-query>
