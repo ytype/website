@@ -30,13 +30,13 @@
             class="navbar-item"
             to="/about"
           >
-            About
+            <p>About</p>
           </g-link>
           <a
             class="navbar-item"
             href="//github.com/calebanthony/gridsome-bulma"
           >
-            GitHub
+            <p>GitHub</p>
           </a>
         </div>
       </div>
@@ -64,7 +64,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar-brand {
+.navbar {
   background-color: #373D49;
+}
+p {
+  color: white;
 }
 </style>

@@ -3,7 +3,9 @@
     class="navbar-item is-size-4 has-text-weight-bold"
     to="/"
   >
-    {{ $static.metadata.siteName }}
+    <p class="title">
+      {{ $static.metadata.siteName }}
+    </p>
   </g-link>
 </template>
 
@@ -16,11 +18,13 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
-a {
+p {
   font-family: 'Noto Sans KR', sans-serif;
   color: white;
+  font-size: 25px;
   &:hover{
     color: #5184EC;
   }
+
 }
 </style>
