@@ -19,12 +19,9 @@ query {
 
 <style lang="scss" scoped>
 p {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: white;
   font-size: 25px;
-  &:hover{
-    color: #5184EC;
-  }
-
+  font-weight: 500;
 }
 </style>

@@ -30,13 +30,15 @@
             class="navbar-item"
             to="/about"
           >
-            <p>About</p>
+            <p class="item">
+              About
+            </p>
           </g-link>
           <a
             class="navbar-item"
             href="//github.com/calebanthony/gridsome-bulma"
           >
-            <p>GitHub</p>
+            <p class="item">GitHub</p>
           </a>
         </div>
       </div>
@@ -64,10 +66,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+$tablet: 1023px;
+
 .navbar {
   background-color: #373D49;
+
+  p {
+    color: white;
+  }
+  .burger {
+    color: white;
+  }
+  .item {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+  }
+
 }
-p {
-  color: white;
+@media all and (max-width:$tablet) {
+.navbar {
+  .item {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+  }
+
 }
+}
+
 </style>

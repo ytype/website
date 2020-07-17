@@ -1,35 +1,38 @@
 <template>
   <Layout>
-    <div class="has-text-centered">
-      <h1 class="title is-1">
-        {{ $page.post.title }}
-      </h1>
-      <PostMeta
-        class="subtitle is-size-6"
-        :post="$page.post"
-      />
-    </div>
-
-    <div class="post content section container">
-      <figure
-        v-if="$page.post.cover_image"
-        class="image is-16by9"
-      >
-        <g-image
-          alt="Cover image"
-          :src="$page.post.cover_image"
+    <div class="main">
+      <div class="has-text-centered ">
+        <h1 class="">
+          {{ $page.post.title }}
+        </h1>
+        <PostMeta
+          class=""
+          :post="$page.post"
         />
-      </figure>
+      </div>
+      <!-- post content section container -->
+      <div class="post ">
+        <figure
+          v-if="$page.post.cover_image"
+          class="image is-16by9"
+        >
+          <g-image
+            alt="Cover image"
+            :src="$page.post.cover_image"
+          />
+        </figure>
 
-      <p v-html="$page.post.content" />
+        <p v-html="$page.post.content" />
 
-      <footer>
-        <PostTags :post="$page.post" />
-      </footer>
+        <footer>
+          <PostTags :post="$page.post" />
+        </footer>
+      </div>
     </div>
 
     <div class="post-comments">
-      <!-- Add comment widgets here -->
+    <!-- Add comment widgets here -->
+    </div>
     </div>
   </Layout>
 </template>
@@ -75,3 +78,20 @@ query Post($id: ID!) {
   }
 }
 </page-query>
+
+<style lang="scss" scoped>
+.main {
+  max-width: 50rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-family: 'Noto Serif KR';
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+</style>

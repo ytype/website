@@ -6,6 +6,8 @@
 </template>
 
 <style lang="scss" scoped>
+
+
 span {
   display: block;
   color: white;
@@ -17,4 +19,6 @@ span {
   background-color: #373D49;
   padding: 20px 0;
 }
+
+
 </style>

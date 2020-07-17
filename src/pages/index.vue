@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    hello world
+    <div class="content">
+      <p>지난 몇 년간은 좋은 개발자를 채용하기 위해 누구보다 노력해왔으며, 또한 제 자신이 여전히 현업에 종사하는 개발자로서 더 좋은 개발자가 되기 위해 꾸준히 노력해왔습니다. 이 책에는 수많은 면접자들을 대상으로 기술 인터뷰를 수행한 경험, 그리고 면접을 더 잘하기 위해 수많은 회사의 기술 면접 과정을 면밀히 살펴본 경험을 담았습니다. 그리고 이를 바탕으로, 저 또한 이직을 시도하면서 겪은 여러 가지 다양한 경험까지도 녹여내어 종합했습니다. 면접관으로서, 또는 면접자로서 겪은 다양한 경험은 한동안 면접관의 입장에서는 미처 느끼지 못했던 잘못된 관행들을 다시금 면접자의 입장에서 깨닫게 되는 좋은 계기가 됐고, 이직 후에는 더 좋은 면접관으로 거듭나게 됐으며, 이 책을 통해 그간의 경험들을 모두 잘 정리해 담아냈음은 물론입니다.</p>
+    </div>
   </Layout>
 </template>
 
@@ -11,3 +13,19 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.content {
+  max-width: 50rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-family: 'Noto Serif KR';
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+</style>
