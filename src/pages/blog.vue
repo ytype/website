@@ -5,7 +5,7 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard
+      <PostView
         v-for="edge in $page.posts.edges"
         :key="edge.node.id"
         :post="edge.node"
@@ -14,6 +14,7 @@
   </Layout>
 </template>
 
+
 <page-query>
 query {
   posts: allPost(filter: { published: { eq: true } }) {
@@ -21,11 +22,10 @@ query {
       node {
         id
         title
+        path
         date(format: "D. MMMM YYYY")
         timeToRead
         description
-        cover_image(width: 770, height: 380, blur: 10)
-        path
         tags {
           id
           title
@@ -40,11 +40,13 @@ query {
 <script>
 import Author from '~/components/Author.vue';
 import PostCard from '~/components/PostCard.vue';
+import PostView from '~/components/postView';
 
 export default {
   components: {
     Author,
     PostCard,
+    PostView,
   },
   metaInfo: {
     title: 'Hello, world!',

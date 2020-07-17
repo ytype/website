@@ -9,26 +9,23 @@ module.exports = {
   siteDescription: 'A baseline Gridsome starter to get you going with Bulma.',
 
   templates: {
-    Post: '/:title',
+    Post: '/blog/:path',
     Tag: '/tag/:id',
   },
 
-  plugins: [
-    {
-      // Create posts from markdown files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: 'content/posts/*.md',
-        refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-          tags: {
-            typeName: 'Tag',
-            create: true,
-          },
+  plugins: [{
+    use: '@gridsome/source-filesystem',
+    options: {
+      typeName: 'Post',
+      path: 'content/posts/*.md',
+      refs: {
+        tags: {
+          typeName: 'Tag',
+          create: true,
         },
       },
     },
+  },
   ],
 
   transformers: {

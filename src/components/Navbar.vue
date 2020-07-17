@@ -79,10 +79,14 @@ $tablet: 1023px;
     color: white;
   }
   .item {
+    font-size: 16px;
     color: white;
     font-family: 'Roboto Mono', monospace;
-  }
 
+  }
+  a.navbar-item:hover {
+    background-color: #373D49;
+  }
 }
 @media all and (max-width:$tablet) {
 .navbar {

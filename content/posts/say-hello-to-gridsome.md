@@ -1,5 +1,6 @@
 ---
 title: Say hello to Gridsome 🎉
+path: Say hello to Gridsome
 date: 2019-02-07
 published: false
 tags: ['Markdown','Releases']

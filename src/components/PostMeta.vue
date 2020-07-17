@@ -1,9 +1,6 @@
 <template>
   <div class="content">
-    Posted {{ post.date }}.
-    <template v-if="post.timeToRead">
-      <strong>{{ post.timeToRead }} min read.</strong>
-    </template>
+    {{ date }}
   </div>
 </template>
 
@@ -17,5 +14,23 @@ export default {
       },
     },
   },
+  data() {
+    return {
+      date: this.post.date,
+    };
+  },
+  mounted() {
+    if (this.date.indexOf('.') === 1) {
+      this.date = (`0${this.date[0]}${this.date.substr(2)}`);
+    } else {
+      this.date = (`${this.date[0]}${this.date[1]}${this.date.substr(3)}`);
+    }
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+.content {
+  margin-bottom: 1rem;
+}
+</style>

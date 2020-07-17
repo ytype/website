@@ -21,7 +21,7 @@ query {
 p {
   font-family: 'Roboto Mono', monospace;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 }
 </style>

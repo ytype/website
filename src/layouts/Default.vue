@@ -2,7 +2,9 @@
   <div id="app">
     <Navbar />
     <main class="section">
-      <slot />
+      <div class="content">
+        <slot />
+      </div>
     </main>
 
     <Footer />
@@ -30,5 +32,17 @@ export default {
 };
 </script>
 <style lang="scss">
+.content {
+  max-width: 50rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 
+  p {
+    font-family: 'Noto Serif KR';
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
 </style>
