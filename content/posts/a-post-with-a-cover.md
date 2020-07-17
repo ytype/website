@@ -17,3 +17,7 @@ description: "graphql에 대한 개념과 vue.js와 graphql을 사용한 사이�
 ![](https://images.unsplash.com/photo-1594909758930-6a610d5cd85a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)
 
 [perade - blog](https://github.com/perade/blog)
+
++ 블로그 글 추가
+    + 피처 엔지니어링 (타이타닉 (https://towardsdatascience.com/predicting-the-survival-of-titanic-passengers-30870ccc7e8), 다콘 제주도 교통 ... )
+    + 몽구스 (몽고db란, nosql, method, promise)

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    This is just a basic 'About Us' page!
+    Hello world
   </Layout>
 </template>
 

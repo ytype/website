@@ -34,9 +34,19 @@
               About
             </p>
           </g-link>
+
+          <g-link
+            class="navbar-item"
+            to="/blog"
+          >
+            <p class="item">
+              Blog
+            </p>
+          </g-link>
+
           <a
             class="navbar-item"
-            href="//github.com/calebanthony/gridsome-bulma"
+            href="//github.com/ytype"
           >
             <p class="item">GitHub</p>
           </a>

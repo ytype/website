@@ -32,5 +32,6 @@ export default {
 <style lang="scss" scoped>
 .content {
   margin-bottom: 1rem;
+  font-family: 'Noto Serif KR';
 }
 </style>
