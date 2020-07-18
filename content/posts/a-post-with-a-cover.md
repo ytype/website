@@ -20,4 +20,5 @@ description: "graphql에 대한 개념과 vue.js와 graphql을 사용한 사이�
 
 + 블로그 글 추가
     + 피처 엔지니어링 (타이타닉 (https://towardsdatascience.com/predicting-the-survival-of-titanic-passengers-30870ccc7e8), 다콘 제주도 교통 ... )
-    + 몽구스 (몽고db란, nosql, method, promise)
+    + 몽구스 (몽고db란, nosql, method, promise
+    + vue js Components & Libraries 사용기 모음 awsome vue 에서 ux적으로, 개발적으로 편한 라이브러리들 정리
