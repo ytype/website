@@ -8,6 +8,7 @@
 export default {
   metaInfo: {
     title: 'About Us',
+    components: {},
   },
 };
 </script>

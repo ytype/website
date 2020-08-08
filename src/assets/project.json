@@ -1,0 +1,15 @@
+[
+    {
+      "name": "선린인터넷고 졸업전시회 2020",
+      "date": "2020/07/21 ~ 2020/08/07",
+      "tag": ["vue","jquery","nuxt","bulma","static site"],
+      "web": "http://sunrin.graphics/2020/",
+      "github": "https://github.com/sunrin-graphics-2020/web-nuxt",
+      "description": "멀티미디어과 졸업전시회 작품 전시로 진행한 프로젝트입니다."
+    },
+    {
+      "name": "connect status",
+      "tag": ["flutter"],
+      "description": "flutter android app"
+    }
+  ]
