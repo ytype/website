@@ -16,8 +16,8 @@
         class="image is-16by9"
       >
         <g-image
-          alt="Cover image"
           :src="$page.post.cover_image"
+          alt="Cover image"
         />
       </figure>
 
@@ -27,7 +27,6 @@
         <PostTags :post="$page.post" />
       </footer>
     </div>
-    </div>
 
     <div class="post-comments">
     <!-- Add comment widgets here -->
@@ -36,27 +35,27 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta';
-import PostTags from '~/components/PostTags';
+import PostMeta from '~/components/PostMeta.vue'
+import PostTags from '~/components/PostTags.vue'
 
 export default {
-  components: {
-    PostMeta,
-    PostTags,
+    components: {
+        PostMeta,
+        PostTags,
 
-  },
-  metaInfo() {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description,
-        },
-      ],
-    };
-  },
-};
+    },
+    metaInfo() {
+        return {
+            title: this.$page.post.title,
+            meta: [
+                {
+                    name: 'description',
+                    content: this.$page.post.description,
+                },
+            ],
+        }
+    },
+}
 </script>
 
 <page-query>
@@ -78,6 +77,20 @@ query Post($id: ID!) {
 </page-query>
 
 <style lang="scss" scoped>
+.tag {
+  align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #4a4a4a;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: .75em;
+    padding-right: .75em;
+    white-space: nowrap;
+}
 .title:not(:last-child) {
   margin-bottom: 0.5rem;
 }

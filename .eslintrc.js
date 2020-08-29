@@ -15,7 +15,13 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/html-indent': ['error', 2],
-    'vue/no-v-html': 'off'
+    'vue/no-v-html': 'off',
+    'gridsome/require-g-image-src': 'off',
+    indent: [
+      'error',
+      4,
+    ],
+    semi: [2, 'never'],
   },
   parserOptions: {
     parser: 'babel-eslint',

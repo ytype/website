@@ -5,7 +5,7 @@
     "build": "gridsome build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --ext .js,.vue src/ --fix"
   },

@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'About Us',
-    components: {},
-  },
-};
+    metaInfo: {
+        title: 'About Us',
+        components: {},
+    },
+}
 </script>

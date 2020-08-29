@@ -5,38 +5,38 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'ytype',
-  siteDescription: 'A baseline Gridsome starter to get you going with Bulma.',
+    siteName: 'ytype',
+    siteDescription: 'A baseline Gridsome starter to get you going with Bulma.',
 
-  templates: {
-    Post: '/blog/:path',
-    Tag: '/tag/:id',
-  },
+    templates: {
+        Post: '/blog/:path',
+        Tag: '/tag/:id',
+    },
 
-  plugins: [{
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'Post',
-      path: 'content/posts/*.md',
-      refs: {
-        tags: {
-          typeName: 'Tag',
-          create: true,
+    plugins: [{
+        use: '@gridsome/source-filesystem',
+        options: {
+            typeName: 'Post',
+            path: 'content/posts/*.md',
+            refs: {
+                tags: {
+                    typeName: 'Tag',
+                    create: true,
+                },
+            },
         },
-      },
     },
-  },
-  ],
+    ],
 
-  transformers: {
+    transformers: {
     // Add markdown support to all file-system sources
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs',
-      ],
+        remark: {
+            externalLinksTarget: '_blank',
+            externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+            anchorClassName: 'icon icon-link',
+            plugins: [
+                '@gridsome/remark-prismjs',
+            ],
+        },
     },
-  },
-};
+}
