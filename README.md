@@ -12,7 +12,7 @@
 ## Demo
 https://calebanthony.github.io/gridsome-bulma
 
-## Install
+## How To Install ?
 
 ### 1. Install Gridsome CLI tool if you don't have
 
