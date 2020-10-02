@@ -20,13 +20,13 @@ query {
 
 <script>
 export default {
-  props: {
-    showTitle: {
-      type: Boolean,
-      default: true,
+    props: {
+        showTitle: {
+            type: Boolean,
+            default: true,
+        },
     },
-  },
-};
+}
 </script>
 
 <style lang="scss" scoped>

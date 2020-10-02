@@ -13,13 +13,13 @@
 
 <script>
 export default {
-  props: {
-    post: {
-      type: Object,
-      default() {
-        return {};
-      },
+    props: {
+        post: {
+            type: Object,
+            default() {
+                return {}
+            },
+        },
     },
-  },
-};
+}
 </script>

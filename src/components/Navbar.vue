@@ -31,7 +31,7 @@
             to="/about"
           >
             <p class="item">
-              About
+              Resume
             </p>
           </g-link>
 
@@ -41,6 +41,15 @@
           >
             <p class="item">
               Blog
+            </p>
+          </g-link>
+
+          <g-link
+            class="navbar-item"
+            to="/projects"
+          >
+            <p class="item">
+              Project
             </p>
           </g-link>
 
@@ -57,22 +66,22 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
+import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo,
-  },
-  props: {
-    showLogo: {
-      type: Boolean,
-      default: true,
+    components: {
+        Logo,
     },
-  },
-  data: () => ({
-    showNav: false,
-  }),
-};
+    props: {
+        showLogo: {
+            type: Boolean,
+            default: true,
+        },
+    },
+    data: () => ({
+        showNav: false,
+    }),
+}
 </script>
 
 <style lang="scss" scoped>

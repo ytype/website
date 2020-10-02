@@ -11,6 +11,7 @@ module.exports = {
     templates: {
         Post: '/blog/:path',
         Tag: '/tag/:id',
+        Project: '/project/:path',
     },
 
     plugins: [{
@@ -18,6 +19,19 @@ module.exports = {
         options: {
             typeName: 'Post',
             path: 'content/posts/*.md',
+            refs: {
+                tags: {
+                    typeName: 'Tag',
+                    create: true,
+                },
+            },
+        },
+    },
+    {
+        use: '@gridsome/source-filesystem',
+        options: {
+            typeName: 'Project',
+            path: 'content/project/*.md',
             refs: {
                 tags: {
                     typeName: 'Tag',

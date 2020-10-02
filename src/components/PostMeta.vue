@@ -6,27 +6,27 @@
 
 <script>
 export default {
-  props: {
-    post: {
-      type: Object,
-      default() {
-        return {};
-      },
+    props: {
+        post: {
+            type: Object,
+            default() {
+                return {}
+            },
+        },
     },
-  },
-  data() {
-    return {
-      date: this.post.date,
-    };
-  },
-  mounted() {
-    if (this.date.indexOf('.') === 1) {
-      this.date = (`0${this.date[0]}${this.date.substr(2)}`);
-    } else {
-      this.date = (`${this.date[0]}${this.date[1]}${this.date.substr(3)}`);
-    }
-  },
-};
+    data() {
+        return {
+            date: this.post.date,
+        }
+    },
+    mounted() {
+        if (this.date.indexOf('.') === 1) {
+            this.date = (`0${this.date[0]}${this.date.substr(2)}`)
+        } else {
+            this.date = (`${this.date[0]}${this.date[1]}${this.date.substr(3)}`)
+        }
+    },
+}
 </script>
 
 <style lang="scss" scoped>
