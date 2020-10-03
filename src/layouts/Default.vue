@@ -12,13 +12,12 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Footer from '~/components/Footer'
-import Navbar from '~/components/Navbar'
+import Footer from '~/components/Footer.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
     components: {
-        Logo, Footer, Navbar,
+        Footer, Navbar,
     },
     props: {
         showLogo: {

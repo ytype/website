@@ -5,8 +5,6 @@
       class="image not-drag"
       src="~/assets/images/ytype.png"
     />
-
-    <p>A baseline Gridsome starter to get you going with Bulma.</p>
   </div>
 </template>
 
@@ -18,17 +16,6 @@ query {
 }
 </static-query>
 
-<script>
-export default {
-    props: {
-        showTitle: {
-            type: Boolean,
-            default: true,
-        },
-    },
-}
-</script>
-
 <style lang="scss" scoped>
 .image {
   display: block;
@@ -37,11 +24,11 @@ export default {
   width: 200px;
   border-radius: 50%;
   -webkit-transition: -webkit-transform 1s ease-in-out;
-          transition:         transform 1s ease-in-out;
+  transition:         transform 1s ease-in-out;
   margin-bottom: 10px;
   &:hover {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 }
 .not-drag {

@@ -3,9 +3,17 @@
     <!-- Author intro -->
     <Author :show-title="true" />
 
+    <div
+      v-for="edge in $page.posts.edges"
+      :key="edge.node.id"
+      :post="edge.node"
+    >
+      <p>{{ edge.node }}</p>
+    </div>
+
     <!-- List posts -->
     <div class="posts">
-      <PostView
+      <View
         v-for="edge in $page.posts.edges"
         :key="edge.node.id"
         :post="edge.node"
@@ -39,14 +47,12 @@ query {
 
 <script>
 import Author from '~/components/Author.vue'
-import PostCard from '~/components/PostCard.vue'
-import PostView from '~/components/postView.vue'
+import View from '~/components/blog/blogView.vue'
 
 export default {
     components: {
         Author,
-        PostCard,
-        PostView,
+        View,
     },
     metaInfo: {
         title: 'Hello, world!',

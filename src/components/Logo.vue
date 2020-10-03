@@ -24,4 +24,8 @@ p {
   font-size: 22px;
   font-weight: 500;
 }
+
+.title {
+  margin-left: 10px;
+}
 </style>

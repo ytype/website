@@ -12,7 +12,7 @@
     </div>
     <!-- List posts -->
     <div class="posts">
-      <PostView
+      <View
         v-for="edge in $page.projects.edges"
         :key="edge.node.id"
         :post="edge.node"
@@ -46,12 +46,12 @@ query {
 
 <script>
 import Author from '~/components/Author.vue'
-import PostView from '~/components/postView.vue'
+import View from '~/components/blog/blogView.vue'
 
 export default {
     components: {
         Author,
-        PostView,
+        View,
     },
     metaInfo: {
         title: 'Hello, world!',
