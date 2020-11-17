@@ -14,7 +14,7 @@ https://calebanthony.github.io/gridsome-bulma
 
 ## Install
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool (if you don't have)
 
 `npm install --global @gridsome/cli`
 
